@@ -14,7 +14,7 @@ export default function Footer() {
               Centro de treinamento especializado que promove a integração sustentável da atividade física à rotina diária.
             </p>
             <div className="flex space-x-4">
-              <a href="https://instagram.com/4fitness" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors">
+              <a href="https://instagram.com/pinturasecores" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-primary transition-colors">
                 <span className="sr-only">Instagram</span>
                 <Instagram className="h-5 w-5" />
               </a>
@@ -43,11 +43,11 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400 text-sm">contato@4fitness.com.br</span>
+                <span className="text-gray-400 text-sm">gestao@ideva.ai</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-3 flex-shrink-0 mt-0.5" />
-                <span className="text-gray-400 text-sm">Av. Principal, 123 - Centro</span>
+                <span className="text-gray-400 text-sm">Alameda Caraceres, 467</span>
               </li>
             </ul>
           </div>

@@ -45,7 +45,7 @@ export default function Differentials() {
     <section id="diferenciais" className="py-24 bg-gray-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h2
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -53,7 +53,7 @@ export default function Differentials() {
           >
             Por que escolher a <span className="text-primary">4Fitness</span>?
           </motion.h2>
-          <motion.p
+          <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -64,7 +64,7 @@ export default function Differentials() {
           </motion.p>
         </div>
 
-        <motion.div
+        <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -87,12 +87,12 @@ export default function Differentials() {
           {/* Table Body */}
           <div className="divide-y divide-gray-800/50">
             {comparisons.map((item, index) => (
-              <div key={index} className="grid grid-cols-12 p-4 sm:p-6 hover:bg-gray-900 transition-all duration-300 group cursor-default">
+              <div key={index} className="grid grid-cols-12 p-4 sm:p-6 hover:bg-gray-900/50 transition-colors">
                 <div className="col-span-12 sm:col-span-6 mb-4 sm:mb-0">
                   <p className="text-base font-medium text-gray-200">{item.feature}</p>
                   <p className="text-sm text-gray-500 mt-1">{item.detail}</p>
                 </div>
-
+                
                 {/* Mobile Labels */}
                 <div className="col-span-6 sm:hidden flex items-center text-sm font-bold text-gray-400 mb-2">
                   4Fitness:

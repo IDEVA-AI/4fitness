@@ -6,19 +6,19 @@ export default function About() {
     {
       year: 'A Essência',
       title: 'A Jornada 4Fitness',
-      description: 'Nascemos para oferecer um treinamento personalizado, longe das academias lotadas e sem orientação. Na 4Fitness, cada aluno é visto e orientado de perto para alcançar seus objetivos reais.',
+      description: 'Nascemos da necessidade de oferecer um espaço onde o treinamento não fosse genérico. Víamos pessoas frustradas em academias lotadas, sem orientação adequada, desistindo de seus objetivos. A 4Fitness surgiu para ser o contraponto: um centro de treinamento onde cada aluno é visto, ouvido e orientado de perto.',
       icon: <Target className="h-6 w-6 text-white" />
     },
     {
       year: 'Nossa Missão',
       title: 'Integração Sustentável',
-      description: 'Acreditamos que o exercício deve se adaptar à sua rotina, não o contrário. Focamos em técnica rigorosa e suporte constante para garantir longevidade física e resultados seguros.',
+      description: 'Acreditamos na integração sustentável entre exercício e rotina. Não buscamos resultados efêmeros, mas sim uma mudança de estilo de vida. Acreditamos que a técnica correta e o suporte constante são as chaves para a longevidade física e para alcançar metas com segurança.',
       icon: <Shield className="h-6 w-6 text-white" />
     },
     {
       year: 'O Diferencial',
-      title: 'Suporte e Técnica',
-      description: 'Nosso diferencial é o acompanhamento humanizado e técnico para evitar lesões. Unimos otimização do tempo a resultados concretos. Aqui seu tempo é valorizado.',
+      title: 'Suporte Contínuo e Técnica',
+      description: 'Nosso maior diferencial é o suporte contínuo com instruções claras e técnica rigorosa para evitar lesões. Unimos um ambiente planejado para otimização do tempo a um atendimento humanizado e focado em resultados reais. Aqui, você não perde tempo.',
       icon: <Users className="h-6 w-6 text-white" />
     }
   ];
@@ -31,14 +31,14 @@ export default function About() {
   ];
 
   return (
-    <section id="sobre" className="py-24 sm:py-32 bg-gray-900 relative overflow-hidden">
+    <section id="sobre" className="py-24 bg-gray-900 relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent"></div>
       <div className="absolute -left-40 top-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h2
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -46,7 +46,7 @@ export default function About() {
           >
             Muito mais que uma academia, <span className="text-primary">seu centro de transformação.</span>
           </motion.h2>
-          <motion.p
+          <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -61,7 +61,7 @@ export default function About() {
           {/* Timeline */}
           <div className="space-y-12">
             {timeline.map((item, index) => (
-              <motion.div
+              <motion.div 
                 key={index}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -75,11 +75,11 @@ export default function About() {
                   </div>
                   {/* Vertical line for mobile */}
                   <div className="absolute left-6 top-12 bottom-[-3rem] w-px bg-gray-800 md:hidden last:hidden"></div>
-
+                  
                   <div className="mt-1 md:mt-0">
                     <span className="text-sm font-bold tracking-wider text-primary uppercase mb-1 block">{item.year}</span>
-                    <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                    <p className="text-gray-400 leading-relaxed text-sm sm:text-base">{item.description}</p>
+                    <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
+                    <p className="text-gray-400 leading-relaxed">{item.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -87,7 +87,7 @@ export default function About() {
           </div>
 
           {/* Image and Stats */}
-          <motion.div
+          <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -95,13 +95,13 @@ export default function About() {
           >
             <div className="relative rounded-2xl overflow-hidden border border-gray-800 shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/20 to-transparent z-10"></div>
-              <img
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1000&auto=format&fit=crop"
-                alt="Equipe 4Fitness em ação"
+              <img 
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1000&auto=format&fit=crop" 
+                alt="Equipe 4Fitness em ação" 
                 className="w-full h-auto object-cover aspect-[4/5]"
                 referrerPolicy="no-referrer"
               />
-
+              
               <div className="absolute bottom-0 left-0 w-full p-8 z-20">
                 <div className="grid grid-cols-2 gap-6">
                   {stats.map((stat, index) => (
@@ -113,7 +113,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-
+            
             {/* Decorative elements */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl -z-10"></div>
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-secondary rounded-full blur-2xl -z-10"></div>

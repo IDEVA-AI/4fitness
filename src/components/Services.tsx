@@ -33,7 +33,7 @@ export default function Services() {
     <section id="servicos" className="py-24 bg-gray-950 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.span
+          <motion.span 
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
@@ -41,7 +41,7 @@ export default function Services() {
           >
             Nossas Soluções
           </motion.span>
-          <motion.h2
+          <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -50,7 +50,7 @@ export default function Services() {
           >
             Treinamento especializado para resultados reais
           </motion.h2>
-          <motion.p
+          <motion.p 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -69,7 +69,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-primary/30 hover:-translate-y-1 transition-all duration-300 group flex flex-col h-full hover:shadow-[0_0_30px_rgba(217,45,32,0.1)]"
+              className="bg-gray-900 border border-gray-800 rounded-2xl p-8 hover:border-gray-700 transition-all duration-300 group flex flex-col h-full"
             >
               <div className="flex items-start gap-6 mb-6">
                 <div className="p-4 bg-gray-950 rounded-xl border border-gray-800 group-hover:border-primary/50 transition-colors">
@@ -82,7 +82,7 @@ export default function Services() {
                   </p>
                 </div>
               </div>
-
+              
               <div className="mt-auto pt-6 border-t border-gray-800">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <p className="text-xs font-medium text-primary bg-primary/10 px-3 py-1.5 rounded-full inline-block w-fit">

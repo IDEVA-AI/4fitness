@@ -51,7 +51,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <a
               href="#planos"
-              className="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-bold rounded-md text-white bg-primary hover:bg-primary-hover hover:scale-105 transform transition-all duration-300 shadow-[0_0_15px_rgba(217,45,32,0.3)]"
+              className="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-md text-white bg-secondary hover:bg-secondary-hover transition-colors"
             >
               Ver Planos
             </a>
@@ -90,7 +90,7 @@ export default function Navbar() {
           <a
             href="#planos"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="w-full mt-4 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-bold rounded-md text-white bg-primary hover:bg-primary-hover transition-colors"
+            className="w-full mt-4 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-secondary hover:bg-secondary-hover transition-colors"
           >
             Ver Planos
           </a>
