@@ -83,7 +83,7 @@ export default function Hero() {
                   href="https://wa.me/55619838435"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-md text-white bg-primary hover:bg-primary-hover transition-all duration-300 shadow-[0_0_20px_rgba(217,45,32,0.4)] hover:shadow-[0_0_30px_rgba(217,45,32,0.6)] group"
+                  className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-md text-white bg-[#25D366] hover:bg-[#20bd5a] transition-all duration-300 shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:shadow-[0_0_30px_rgba(37,211,102,0.6)] group"
                 >
                   Falar com Especialista
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
